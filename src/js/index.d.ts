@@ -114,6 +114,12 @@ declare module "lottie-react-native" {
      * callback will be called only when `loop` is set to false.
      */
     onAnimationFinish ?: (isCancelled: boolean) => void;
+
+    /**
+     * An array of objects that specify layers in the animation's JSON to be recolored with flat fills
+     * { layer: 'layer name', color: '#FFFFFF' }
+     */
+    colorFilterToLayers?: Array<Object>,
   }
 
   /**
