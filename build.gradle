@@ -11,11 +11,6 @@ buildscript {
     classpath 'de.undercouch:gradle-download-task:3.4.3'
     classpath 'com.google.gms:google-services:4.3.0'
     classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-    def work_version = "2.6.0"
-    // Force WorkManager 2.6.0 for transitive dependency
-    implementation("androidx.work:work-runtime-ktx:$work_version") {
-        force = true
-    }
   }
 }
 apply plugin: 'com.android.library'
